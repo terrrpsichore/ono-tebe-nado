@@ -2,6 +2,7 @@
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
+  column-gap: 16px;
   max-width: 1052px;
   font-size: 18px;
   padding: 92px 24px 96px 24px;
