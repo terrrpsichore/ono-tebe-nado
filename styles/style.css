@@ -1,10 +1,10 @@
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  column-gap: 16px;
   max-width: 1052px;
   font-size: 18px;
-  margin: 92px 24px 96px 24px;
+  margin: 92px 24px 90px;
+  column-gap: 5px; 
 }
 
 .header_nav {
@@ -13,11 +13,10 @@
 
 .header_links-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   list-style: circle;
   line-height: 21.13px;
-  letter-spacing: 0.01em;
 }
 
 .header_links-list-item_no-bullit {
@@ -36,7 +35,6 @@
 .address {
   justify-self: flex-end;
   max-width: 240.5px;
-  padding-top: 5px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -44,9 +42,14 @@
   letter-spacing: 0.01em;
 }
 
+.header_address {
+  margin-right: 25px;
+  padding-top: 5px;
+}
+
 .cover {
-  width: 1100px;
-  padding: 165px 50px 0;
+  max-width: 1100px;
+  padding: 165px 50px 51px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,7 +67,6 @@
 }
 
 .cover_title {
-  padding-top: 5px;
   font-size: 100px;
   font-weight: 700;
   text-transform: uppercase;
@@ -89,6 +91,7 @@
 
 .aligned-text_left {
   line-height: 115%;
+  text-align: left;
 }
 
 .aligned-text_center {
@@ -104,7 +107,7 @@
   justify-content: space-between;
   align-items: center;
   color:#FFFFFF;
-  padding: 135px 0 50px;
+  padding-top: 114px;
   position: relative;
 }
 
@@ -113,7 +116,7 @@
   padding-left: 30px;
   font-size: 22px;
   line-height: 28px;
-  word-spacing: 20px;
+  word-spacing: 18px;
 }
 
 .bet-button {
@@ -123,7 +126,6 @@
   font-weight: 500;
   line-height: 25.83px;
   font-size: 22px;
-  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   color: #FFF;
@@ -149,7 +151,6 @@
   gap: 25px;
   list-style: none;
   color: #FFF;
-  position: relative;
 }
 
 .lots_card-list-item {
@@ -212,11 +213,10 @@
 
 .about {
   width: 1052px;
-  margin-left: 24px;
-  margin-top: 146px;
+  margin: 149px 0 0 24px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  column-gap: 25px;
+  column-gap: 15px;
 }
 
 .about_column-logo {
@@ -224,7 +224,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 35px;
+  padding: 34px 7px 0 0;
 }
 
 .about_logo {
@@ -264,7 +264,7 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 180px 50px 88px;
+  margin: 180px 50px 88px 53px;
 }
 
 .footer_address {
@@ -287,7 +287,7 @@
 .footer_social-list {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 48px;
   list-style: none;
 }
